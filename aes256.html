@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>AES256 Online</title>
+    <script src="js/jquery-1.10.1.min.js"></script>
+    <script type="text/javascript" src="js/gibberish-aes-1.0.0.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/aes256.js"></script>
+</head>
+<body>
+  <div id="header">
+    <h1><a href="index.html">Online Tools</a></h1>
+  </div>
+  <div id="body">
+    <script src="js/main.js"></script>
+    <div id="main">
+        <h1>AES 256 Encrypt/Decrypt - Offline</h1>
+        <div id="container">
+            <table style="width:100%">
+                <tbody>
+                    <tr><td>Password<br><input id="pass" type="text"></td></tr>
+                    <tr><td><strong>Input</strong><br><textarea id="data"></textarea></td></tr>
+                    <tr><td style="float:right"><input type="button" value="Encrypt"> <input type="button" value="Decrypt"></td></tr>
+                    <tr><td><strong>Output</strong><br><textarea id="out" readonly="readonly"></textarea></td></tr>
+                </tbody>
+            </table><br>
+            <p><strong>You can decrypt with openssl like this in command promt:</strong></p>
+            <p class="simple">echo "U2FsdGVkX1+21O5RB08bavFTq7Yq/gChmXrO3f00tvJaT55A5pPvqw0zFVnHSW1o" | openssl enc -d -aes-256-cbc -a -k password</p>
+        </div></div>
+        <div id="sidebar">
+          <div class="col">
+            <ul class="menu">
+              <li>
+                <div class="menu-group">Hash</div>
+              </li>
+              <li><a href="sha256.html">SHA256</a></li>
+            </ul>
+            <hr>
+            <ul class="menu">
+              <li>
+                <div class="menu-group">Secret Key Cryptography</div>
+              </li>
+              <li><a href="aes256.html">AES256</a></li>
+            </ul>
+          </div>
+  </div>
+</div>
+
+  <div id="footer">Thanks to <a href="https://github.com/emn178/online-tools">github.com/emn178</a></div>
+</body>
+</html>
